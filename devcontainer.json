@@ -1,0 +1,13 @@
+{
+	"name": "CUDA-Mamba",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"CUDA_VERSION": "11.7.1",
+			"CUDA_IMAGE_TYPE": "base",
+			"CUDA_OS": "ubuntu22.04",
+			"CONDA_DIR": "/opt/conda",
+            "PYTHON_VERSION": "3.9.15"
+		}
+	}
+}
