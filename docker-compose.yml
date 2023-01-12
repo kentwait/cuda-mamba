@@ -1,0 +1,12 @@
+version: 3
+services:
+  dev:
+    image: kentwait/cuda-mamba:latest
+    build:
+      context: .
+      args:
+        CUDA_VERSION: "11.7.1"
+        CUDA_IMAGE_TYPE: "base"
+        CUDA_OS: "ubuntu22.04"
+        CONDA_DIR: "/opt/conda"
+        PYTHON_VERSION: "3.9.15"
