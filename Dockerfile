@@ -30,4 +30,5 @@ ENV PATH=${CONDA_DIR}/bin:$PATH
 
 # Install 
 ARG PYTHON_VERSION=3.9.15
-RUN mamba install -y python=${PYTHON_VERSION} cuda-python=${CUDA_VERSION} "cudatoolkit-dev<=${CUDA_VERSION}"
+RUN mamba install -y python=${PYTHON_VERSION} "cuda-python<=${CUDA_VERSION}" "cudatoolkit-dev<=${CUDA_VERSION}" \
+  && mamba clean -afy
