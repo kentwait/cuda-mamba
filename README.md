@@ -1,10 +1,10 @@
 # CUDA-Mamba
 
 Nvidia CUDA container with Mamba package manager installed.
-This container is a useful base for containers that Python package management and need access to CUDA libraries.
+This container is a useful base for containers that need Python package management and access to CUDA libraries.
 
 
-## Downloading from Dockehub
+## Downloading from Dockerhub
 
 CUDA-Mamba can be downloaded from Dockerhub using the following
 
@@ -15,7 +15,7 @@ This downloads a prebuilt image with the [default configuration](#default-config
 
 ## Building from Dockerfile
 
-For more flexibility and control over CUDA and Python versions, clone this repository and build using the included Dockerfile.
+For more flexibility and control over CUDA and Python versions, clone this [repository](https://github.com/kentwait/cuda-mamba) and build using the included Dockerfile.
 
 ### Build arguments
 - CUDA_VERSION: "11.7.1"
